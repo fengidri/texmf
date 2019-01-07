@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstdefinestyle{inline}{
+    columns=fullflexible,
+    breaklines=false,
+}
+\newcommand{\tp}[1]{\lstinline[style=inline]{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\img}[2]{%
+\vbox{ %
+\begin{center}
+#1
+\includegraphics[width = \textwidth]{#2}
+\end{center}%
+}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% just one pic full the frame
+\def\framepic#1{
+\begin{frame}[plain]
+\hspace*{-\beamerleftmargin}%
+\pgfimage{#1}%
+\end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\cbox[1]{%
+\begin{tcolorbox}[colback=green!5,colframe=green!35!black]
+  \center{
+    \fangsong
+    #1
+  }
+\end{tcolorbox}
+}

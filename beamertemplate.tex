@@ -1,0 +1,25 @@
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{headline}
+{%
+ %\includegraphics[height=0.5cm]{img/bearcache-logo.png}
+  \vskip 10pt
+  \begin{beamercolorbox}{section in head/foot}
+\large\hskip1em %
+%
+\ifnum\thesection>0
+\arabic{section}. \insertsection%
+\fi
+\ifnum\thesubsection>0
+\ -\ \arabic{section}.\arabic{subsection}.  \insertsubsection%
+\fi
+%
+  \end{beamercolorbox}%
+%\includegraphics[height=0.5cm]{img/upyun-logo.png}\ \ \
+}
+
+%\pagestyle{fancy}
+%\chead{\thepage}
+%\lfoot{}
+%\cfoot{}
+%\renewcommand{\headrulewidth}{0.4pt}
