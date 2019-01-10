@@ -1,8 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % font
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+\usepackage{ctex}
+\usepackage{fontspec,xunicode,xltxtra}
 
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
 \newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
 \newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
 \newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}
@@ -18,13 +20,30 @@
 % 处理特殊字符
 \defaultfontfeatures{Mapping=tex-text}
 % 处理生譬字
-\xeCJKsetup{AutoFallBack=true}
+%\xeCJKsetup{AutoFallBack=true}
 
-\setCJKmonofont{Adobe Fangsong Std R}
-\setCJKmonofont[Scale=0.9,AutoFakeBold]{WenQuanYi Micro Hei}
-
-\setCJKsansfont{Adobe Fangsong Std R}
+%\setCJKmonofont{Adobe Fangsong Std R}
+% 中文字体
+\setCJKmonofont{Adobe Fangsong Std R} % ttfamily
+\setCJKsansfont{Adobe Fangsong Std R} % sffamily
 \setCJKmainfont{Adobe Fangsong Std R} % rmfamily
 
-\setCJKfamilyfont{sf}{WenQuanYi Micro Hei}
-\setCJKfamilyfont{song,AutoFakeBold}{WenQuanYi Micro Hei}
+% 英文字体
+\setmainfont{DejaVu Sans ExtraLight}
+\setsansfont{DejaVu Sans ExtraLight}
+\setmonofont{DejaVu Sans ExtraLight}
+
+%\setsansfont{DejaVu Sans}
+%\setmonofont{DejaVu Sans Mono}
+%
+%\setCJKmainfont[BoldFont={FandolHei},ItalicFont={FandolKai}] {FandolSong}
+%\setCJKsansfont{FandolHei}
+%\setCJKmonofont{FandolFang}
+%\setCJKmonofont{\fangsong} % ttfamily
+%\setCJKsansfont{\fangsong} % sffamily
+%\setCJKmainfont{\fangsong} % rmfamily
+%\setmainfont[Mapping=tex-text]{\fangsong}
+%
+%\setCJKfamilyfont{sf}{WenQuanYi Micro Hei}
+%\setCJKfamilyfont{song,AutoFakeBold}{WenQuanYi Micro Hei}
+
