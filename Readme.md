@@ -120,6 +120,12 @@ setbeamercolor 可以修改 beamer 指定的结构的色彩.
   \end{columns}
 ```
 
+## 去掉 ^^I
+
+在 beamer lstlisting 中的 如果有 tab 可能会出现 `^^I`,
+解决办法在
+[这里](https://tex.stackexchange.com/questions/352063/listings-package-in-xelatex-every-tab-in-lstlisting-compiles-to-i-in-the-pd)
+
 
 ## 学习资源
 [Beamer](https://cn.sharelatex.com/learn/Beamer)
