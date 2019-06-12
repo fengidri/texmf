@@ -15,15 +15,17 @@
 }%
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{httpimgno}
 
 \usepackage[export]{adjustbox}%
 
-\newcommand{\httpimg}[1]{%
+% run xelatex with `-shell-escape`
+\newcommand{\httpimg}[2][max width = \textwidth, max height=0.5\textwidth]{%
 \vbox{ %
 \begin{center}
-  \immediate\write18{curl  #1  -o /tmp/tex\arabic{httpimgno}.png}
-\includegraphics[max width = \textwidth, max height=0.5\textwidth]{/tmp/tex\arabic{httpimgno}.png}
+ \immediate\write18{curl  #2  -o /tmp/tex\arabic{httpimgno}.png}
+\includegraphics[#1]{/tmp/tex\arabic{httpimgno}.png}
 \addtocounter{httpimgno}{1}
 \end{center}%
 }%
