@@ -1,0 +1,11 @@
+%
+% xelatex -ini -jobname=fdoc '&xelatex'  dump.tex
+%
+
+\def\encodingdefault{OT1}\normalfont
+\everyjob\expandafter{\the\everyjob\def\encodingdefault{TU}\normalfont}
+
+\input header
+\count0=0
+
+\dump
