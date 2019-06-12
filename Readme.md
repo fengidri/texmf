@@ -4,6 +4,12 @@
 export export TEXINPUTS=.:/path/to/this:$TEXINPUTS
 ```
 
+## ini dump
+
+```
+xelatex -ini -jobname=fdoc '&xelatex' dump.tex # get fdoc.fmt
+xelatex -shell-escape '&fdoc' main.tex # use fdoc to compile tex file
+```
 
 
 
